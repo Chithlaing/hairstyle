@@ -1,0 +1,55 @@
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+ul {
+  margin: 0;
+}
+
+.bg-steel {
+  background-color: #4C8F96;
+  height: 120px;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+.first_image {
+    border-color: #4C8F96;
+    border-style: solid;
+}
+.mt {
+    margin-top: 170px;
+}
+.mini_image_border {
+    border: 6px solid #4db6c2;   /* ပုံနားအပြာစိမ်းဘောင် */
+    border-radius: 6px;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.50); /* အောက်ဘက် shadow ကြီး */
+}
+.box {
+    background-color: #519194;
+    border-color: #5FB3BD;
+    border-style: solid;
+    border-width: 5px;
+}
+.address {
+    background-color: #5FB3BD;
+}
+.margin_top {
+    margin-top: 300px;
+    border-style: solid;
+}

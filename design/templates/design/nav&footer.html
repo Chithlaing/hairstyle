@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'design/main.css' %}?v=3">
+        <title>{% block title %}Hair Style Site{% endblock %}</title>
+    </head>
+<body>
+<header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-steel fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-uppercase font_style font-italic text-warning h1 col-3" href="{% url 'design-hairstyle' %}">Hair Style
+            <i class="bi bi-1-circle-fill"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                    aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Right Side -->
+            <div class="col-8 mr-0 justify-content-around p-0 collapse navbar-collapse" id="navbarToggle">
+                <div class="navbar-nav">
+                    <div class="mb-3">
+                        <a class="pt-1 pb-1 pr-3 pl-3 d-inline nav-item text-white rounded ml-3 h5 bg-dark nav-link" href="{% url 'design-hairstyle' %}">HOME</a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="pt-1 pb-1 pr-3 pl-3 d-inline nav-item text-white rounded ml-3 h5 bg-dark nav-link" href="{% url 'design-about' %}">ABOUT</a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="pt-1 pb-1 pr-3 pl-3 d-inline nav-item text-white rounded ml-3 h5 bg-dark nav-link" href="{% url 'design-hairdesign' %}">HAIRSTYLE</a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="pt-1 pb-1 pr-3 pl-3 d-inline nav-item text-white rounded ml-3 h5 bg-dark nav-link" href="{% url 'design-news' %}">NEWS</a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="pt-1 pb-1 pr-3 pl-3 d-inline nav-item text-white rounded ml-3 h5 bg-dark nav-link" href="{% url 'design-contact' %}">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+{% block content %}
+{% endblock %}
+<div class="text-white address mb-5 d-flex justify-content-center pt-5 pb-5">
+    chithlaingwin.letpan@gmail.com
+</div>
+<footer class="footer mt-5"></footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
